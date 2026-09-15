@@ -523,6 +523,7 @@ services:
       # Client key for runner - public key. Matching private pair is in forms-runner's env vars.
       OIDC_RUNNER_JWKS: '{"keys":[{"kty":"EC","x":"klReRdDGt-ndqOFv9rrf8wZtv-4NbigRuHUrPHqNhKc","y":"BaRIF7TCtcMyQtDJL5dUD8u6KaiKdcTIuHFaQgKXUiA","crv":"P-256","use":"sig","alg":"ES256","kid":"runner-es256-52accdf020bd"}]}'
       OIDC_RUNNER_REDIRECT_URIS: http://localhost:3009/auth/callback
+      OIDC_RUNNER_POST_LOGOUT_REDIRECT_URIS: http://localhost:3009/auth/signed-out
       OIDC_TTL_AUTHORIZATION_CODE: 60
       OIDC_TTL_ID_TOKEN: 300
       OIDC_TTL_ACCESS_TOKEN: 300
